@@ -1,0 +1,46 @@
+{
+  "broker": {
+    "host": "localhost",
+    "port": 1883
+  },
+  "warehouses": [
+    {
+      "id": "1",
+      "sensors": [
+        {
+          "type": "temperature",
+          "port": 3344
+        },
+        {
+          "type": "humidity",
+          "port": 3355
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "sensors": [
+        {
+          "type": "temperature",
+          "port": 3345
+        },
+        {
+          "type": "humidity",
+          "port": 3356
+        }
+      ]
+    }
+  ],
+  "central": {
+    "sensors": [
+      {
+        "type": "temperature",
+        "threshold": 35
+      },
+      {
+        "type": "humidity",
+        "threshold": 50
+      }
+    ]
+  }
+}
